@@ -1,5 +1,11 @@
 # Tag Locating in MauiRfidSample
 
+## Document Info
+
+- Author: Chuck Lin
+- Local directory: /Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample
+- Remote directory: https://github.com/GelatoCookie/MAUI275_locate_mask
+
 This document explains how tag locating works in this app and how `TagPattern` and `TagMask` are used when calling Zebra RFID SDK APIs.
 
 For implementation and architecture details, see `design.md`.
