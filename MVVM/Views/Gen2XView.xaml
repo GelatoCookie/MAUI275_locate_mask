@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiRfidSample.MVVM.Views.Gen2XView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiRfidSample.MVVM.ViewModels"
+    Title="Gen2X Features">
+    <Shell.TitleView>
+        <Grid Padding="0" ColumnSpacing="8"
+              ColumnDefinitions="*,Auto"
+              VerticalOptions="Center"
+              HorizontalOptions="FillAndExpand">
+            <Label Text="Gen2X Features"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center" />
+            <Button Grid.Column="1"
+                    Text="ⓘ"
+                    Clicked="InfoItemClicked"
+                    FontSize="28"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    Padding="0"
+                    HeightRequest="40"
+                    WidthRequest="40" />
+        </Grid>
+    </Shell.TitleView>
+
+    <StackLayout Orientation="Vertical"
+                 Spacing="0"
+                 VerticalOptions="FillAndExpand">
+
+        <!-- Header summary -->
+        <StackLayout Padding="5,5,5,0" BackgroundColor="#cccccc" Orientation="Horizontal">
+            <Label FontAttributes="Bold" FontSize="Micro" Text="Unique Tags" />
+            <Label Margin="0,0,60,0" FontAttributes="Bold" FontSize="Micro" HorizontalOptions="CenterAndExpand" Text="Total Read" />
+            <Label FontAttributes="Bold" FontSize="Micro" HorizontalOptions="End" Text="Read Time" />
+        </StackLayout>
+
+        <StackLayout Padding="5" BackgroundColor="#cccccc" Orientation="Horizontal">
+            <Label FontSize="Medium" Text="{Binding UniqueTags}" TextColor="Blue" />
+            <Label FontSize="Medium" HorizontalOptions="CenterAndExpand" Text="{Binding TotalTags}" TextColor="Blue" />
+            <Label FontSize="Medium" HorizontalOptions="End" Text="{Binding TotalTime}" TextColor="Blue" />
+        </StackLayout>
+
+        <!-- Column headings -->
+        <StackLayout Padding="5" BackgroundColor="#cccccc" Orientation="Horizontal" Spacing="10">
+            <Label FontAttributes="Bold" Text="ID" />
+            <Label FontAttributes="Bold" HorizontalOptions="EndAndExpand" Text="RSSI" />
+            <Label FontAttributes="Bold" HorizontalOptions="End" Text="COUNT" />
+        </StackLayout>
+
+        <!-- Tag list -->
+                <CollectionView
+                    x:Name="TagCollectionView"
+                    ItemsSource="{Binding AllItems}"
+                        SelectionMode="Multiple"
+                         SelectionChanged="OnTagSelectionChanged"
+                        IsVisible="{Binding listAvailable}"
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="5" ColumnDefinitions="260,*,*">
+                        <Label Grid.Column="0" Text="{Binding InvID}" />
+                        <Label Grid.Column="1" Text="{Binding RSSI}" />
+                        <Label Grid.Column="2" Text="{Binding TagCount}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Selection info -->
+        <StackLayout Orientation="Horizontal" Padding="5" Spacing="10" IsVisible="{Binding listAvailable}">
+            <Label Text="Selected:" />
+            <Label Text="{Binding SelectedCount}" FontAttributes="Bold" />
+            <Label Text="{Binding SelectionWarning}" TextColor="Red" />
+        </StackLayout>
+
+        <!-- Reader hint -->
+        <StackLayout Padding="5" HorizontalOptions="Center" IsVisible="{Binding hintAvailable}" Orientation="Vertical" Spacing="10" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Reader: " />
+                <Label Text="{Binding readerConnection}" TextColor="Blue" />
+            </StackLayout>
+            <Label IsVisible="{Binding isConnected}" Text="{Binding readerStatus}" />
+        </StackLayout>
+
+        <!-- Quiet snapshot count -->
+        <Label Text="{Binding QuietSnapshot.Count, StringFormat='Quiet Tags: {0}'}"
+               IsVisible="{Binding IsQuiet}"
+               FontSize="11"
+               TextColor="Gray"
+               Padding="5,0" />
+
+        <!-- Bottom controls -->
+        <Grid Padding="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="1"
+                    Text="{Binding StartStopButtonText}"
+                    Command="{Binding StartStopCommand}"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    BackgroundColor="#3366CC"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="48" />
+
+            <!-- Mode checkboxes -->
+            <Grid Grid.Row="1" Grid.ColumnSpan="3" ColumnSpacing="24" RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Spacing="4">
+                    <CheckBox IsChecked="{Binding IsQuiet}" Scale="0.9" />
+                    <Label Text="Quiet" FontSize="14" VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="4">
+                    <CheckBox IsChecked="{Binding IsUnquiet}" Scale="0.9" />
+                    <Label Text="Un-quiet" FontSize="14" VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Spacing="4">
+                    <CheckBox IsChecked="{Binding IsTagFocus}" Scale="0.9" />
+                    <Label Text="TagFocus" FontSize="14" VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Grid.Row="1" Grid.Column="1" Spacing="4">
+                    <CheckBox IsChecked="{Binding IsFastID}" Scale="0.9" />
+                    <Label Text="FastID" FontSize="14" VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+            </Grid>
+        </Grid>
+    </StackLayout>
+</ContentPage>

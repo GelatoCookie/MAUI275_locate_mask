@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.EndpointStatus"
+             xmlns:viewmodel="clr-namespace:MauiRfidSample.MVVM.ViewModels"
+             xmlns:api3="clr-namespace:Com.Zebra.Rfid.Api3;assembly=MauiJavaSdkBinding"
+             Title="Endpoint Status">
+
+    <Grid RowDefinitions="Auto,*" Padding="15">
+       
+        <!-- Events Section -->
+        <Frame Grid.Row="1" BorderColor="#DDDDDD" CornerRadius="10" Padding="15">
+            <Grid RowDefinitions="Auto,*">
+                <Label Text="Endpoint Events" FontSize="16" FontAttributes="Bold" Grid.Row="0" />
+                
+                <CollectionView Grid.Row="1" ItemsSource="{Binding EndpointEvents}" Margin="0,10,0,0"
+                               EmptyView="No events have been recorded.">
+                    <CollectionView.ItemTemplate>
+    <DataTemplate>
+        <Frame BorderColor="#EEEEEE" Margin="0,5" Padding="10">
+            <Grid RowDefinitions="Auto,Auto">
+                <!-- Header -->
+                <Grid Grid.Row="0" ColumnDefinitions="*,Auto">
+                    <Label Text="{Binding EventSource}" FontAttributes="Bold" TextColor="#3366CC" />
+                  
+                </Grid>
+                
+                <!-- Details -->
+                <Grid Grid.Row="1" ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto" Margin="0,5,0,0">
+                    <Label Text="Event Type:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" Margin="0,0,5,0" />
+                    <Label Text="{Binding EventType}" Grid.Row="0" Grid.Column="1" />
+                    
+                    <Label Text="Status:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" Margin="0,0,5,0" />
+                    <Label Text="{Binding Status}" Grid.Row="1" Grid.Column="1" />
+                    
+                    <Label Text="Endpoint:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" Margin="0,0,5,0" />
+                    <Label Text="{Binding EpName}" Grid.Row="2" Grid.Column="1" />
+                    
+                    <Label Text="Reason:" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" Margin="0,0,5,0" />
+                    <Label Text="{Binding Reason}" Grid.Row="3" Grid.Column="1" />
+                    
+                    <Label Text="Cause:" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" Margin="0,0,5,0" />
+                    <Label Text="{Binding Cause}" Grid.Row="4" Grid.Column="1" />
+                </Grid>
+            </Grid>
+        </Frame>
+    </DataTemplate>
+</CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

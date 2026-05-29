@@ -1,0 +1,328 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.VerifyReferenceTrimCompatibility = 
+build_property.VerifyReferenceAotCompatibility = 
+build_property.MauiXamlNoWarn = 
+build_property.EnableMauiXamlDiagnostics = true
+build_property.MauiXamlLineInfo = 
+build_property.Configuration = Debug
+build_property.TargetFramework = net10.0-android
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MauiRfidSample
+build_property.ProjectDir = /Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/About.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.About.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/About.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/About.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/AddCertificate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.AddCertificate.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/AddCertificate.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/AddCertificate.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/AdminLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.AdminLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/AdminLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/AdminLogin.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/BarcodeScanner.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.BarcodeScanner.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/BarcodeScanner.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/BarcodeScanner.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/Certificates.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.Certificates.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/Certificates.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/Certificates.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ChangePassword.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ChangePassword.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ChangePassword.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ChangePassword.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/EndpointConfiguration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.EndpointConfiguration.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/EndpointConfiguration.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/EndpointConfiguration.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/EndpointSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.EndpointSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/EndpointSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/EndpointSettings.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/EndpointStatus.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.EndpointStatus.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/EndpointStatus.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/EndpointStatus.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/FirmwareUpdate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.FirmwareUpdate.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/FirmwareUpdate.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/FirmwareUpdate.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/Gen2XTagProtection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.Gen2XTagProtection.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/Gen2XTagProtection.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/Gen2XTagProtection.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/Gen2XView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.Gen2XView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/Gen2XView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/Gen2XView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/InventoryList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.InventoryList.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/InventoryList.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/InventoryList.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/LocateTag.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.LocateTag.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/LocateTag.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/LocateTag.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/Lock.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.Lock.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/Lock.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/Lock.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/Prefilters.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.Prefilters.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/Prefilters.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/Prefilters.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ReaderList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ReaderList.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ReaderList.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ReaderList.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ReaderWiFi.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ReaderWiFi.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ReaderWiFi.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ReaderWiFi.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ReadWrite.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ReadWrite.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ReadWrite.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ReadWrite.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ReadWriteAccess.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ReadWriteAccess.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ReadWriteAccess.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ReadWriteAccess.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/RelativeDistance.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.RelativeDistance.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/RelativeDistance.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/RelativeDistance.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/SingulationView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.SingulationView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/SingulationView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/SingulationView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/TriggerMapping.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.TriggerMapping.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/TriggerMapping.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/TriggerMapping.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/ViewDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.ViewDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/ViewDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/ViewDemo.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MVVM/Views/WifiStatus.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.MVVM.Views.WifiStatus.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM/Views/WifiStatus.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM/Views/WifiStatus.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiRfidSample.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:api3="clr-namespace:Com.Zebra.Rfid.Api3;assembly=MauiJavaSdkBinding"
+             x:Class="MauiRfidSample.MVVM.Views.EndpointSettings"
+             Title="EndpointSettings">
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="10"
+         Spacing="10">
+
+            <!-- Row 1: Name -->
+            <HorizontalStackLayout>
+                <Label Text="Name" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry Text="{Binding Name, Mode=TwoWay}" 
+                   HorizontalOptions="FillAndExpand" 
+                   Placeholder="Enter Name" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 2: Type -->
+            <HorizontalStackLayout>
+                <Label Text="Type" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Picker x:Name="epType" HorizontalOptions="FillAndExpand" ItemsSource="{Binding Types}" SelectedItem="{Binding SelectedType, Mode=TwoWay}">
+                    <!--<Picker.Items>
+                        <x:String>SOTI</x:String>
+                        <x:String>MDM</x:String>
+                    </Picker.Items>-->
+                </Picker>
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 3: Protocol -->
+            <HorizontalStackLayout>
+                <Label Text="Protocol" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Picker x:Name="epProtocol" HorizontalOptions="FillAndExpand" ItemsSource="{Binding ProtocolTypes}" SelectedItem="{Binding ProtocolSelectedType, Mode=TwoWay}">
+
+                    <!-- Add Picker items here -->
+                </Picker>
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 4: URL -->
+            <HorizontalStackLayout>
+                <Label Text="URL" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry Text="{Binding Url, Mode=TwoWay}" 
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter URL" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 5: Port -->
+            <HorizontalStackLayout>
+                <Label Text="Port" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry Text="{Binding Port, Mode=TwoWay}" 
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter port number" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 6: KeepAlive (secs) -->
+            <HorizontalStackLayout>
+                <Label Text="KeepAlive (secs)" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry Text="{Binding KeepAlive, Mode=TwoWay}" 
+                    Keyboard="Numeric" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter keep alive seconds"/>
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 7: TenantId -->
+            <HorizontalStackLayout>
+                <Label Text="TenantId" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry Text="{Binding TenantId, Mode=TwoWay}" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter tenant ID"/>
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 8: Clean Session -->
+            <HorizontalStackLayout>
+                <Label Text="Clean Session" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding CleanSession, Mode=TwoWay}"
+                     HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <HorizontalStackLayout>
+                <Label Text="Min Reconnect Delay (secs)" 
+                       FontAttributes="Bold" 
+                       WidthRequest="100"
+                       VerticalOptions="Center" />
+                <Entry Text="{Binding MinReconnectDelay, Mode=TwoWay}" 
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter min reconnect delay" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row: Max Reconnect Delay -->
+            <HorizontalStackLayout>
+                <Label Text="Max Reconnect Delay (secs)" 
+                       FontAttributes="Bold" 
+                       WidthRequest="100"
+                       VerticalOptions="Center" />
+                <Entry Text="{Binding MaxReconnectDelay, Mode=TwoWay}" 
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter max reconnect delay" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row: HostVerify -->
+            <HorizontalStackLayout>
+                <Label Text="HostVerify" 
+                       FontAttributes="Bold" 
+                       WidthRequest="100"
+                       VerticalOptions="Center" />
+                <Picker x:Name="HostVerify" HorizontalOptions="FillAndExpand" ItemsSource="{Binding HostVerifyTypes}" SelectedItem="{Binding HostVerifySelectedType, Mode=TwoWay}">
+
+                    <!-- Add Picker items here -->
+                </Picker>
+
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row: Username -->
+            <HorizontalStackLayout>
+                <Label Text="Username" 
+                       FontAttributes="Bold" 
+                       WidthRequest="100"
+                       VerticalOptions="Center" />
+                <Entry Text="{Binding Username, Mode=TwoWay}" 
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter username" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row: Password -->
+            <HorizontalStackLayout>
+                <Label Text="Password" 
+                       FontAttributes="Bold" 
+                       WidthRequest="100"
+                       VerticalOptions="Center" />
+                <Entry Text="{Binding Password, Mode=TwoWay}" 
+                       IsPassword="True"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Enter password" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <HorizontalStackLayout x:Name="CACertPickerLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                     Binding="{Binding SelectedType}"
+                     Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </HorizontalStackLayout.Triggers>
+                <Label Text="CA Certificate" 
+                   FontAttributes="Bold" 
+                   WidthRequest="100"
+                   VerticalOptions="Center" />
+                        <Picker x:Name="caCertificateSpinner" 
+                    HorizontalOptions="FillAndExpand"
+                    ItemsSource="{Binding CACertificates}"
+                    SelectedItem="{Binding SelectedCACertificate , Mode=TwoWay}"
+                    Title="Pick a CA Certificate" />
+                <Label Text="{Binding DisplaySelectedCACertificate}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="ClientCertPickerLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                     Binding="{Binding SelectedType}"
+                     Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </HorizontalStackLayout.Triggers>
+                <Label Text="Client Certificate" 
+                   FontAttributes="Bold" 
+                   WidthRequest="100"
+                   VerticalOptions="Center" />
+                        <Picker x:Name="clientCertificateSpinner" 
+                    HorizontalOptions="FillAndExpand"
+                    ItemsSource="{Binding ClientCertificates}"
+                    SelectedItem="{Binding SelectedClientCertificate, Mode=TwoWay}"
+                    Title="Pick a Client Certificate" />
+                <Label Text="{Binding DisplaySelectedClientCertificate}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="PrivateKeyPickerLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                     Binding="{Binding SelectedType}"
+                     Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </HorizontalStackLayout.Triggers>
+                <Label Text="Private Key" 
+                   FontAttributes="Bold" 
+                   WidthRequest="100"
+                   VerticalOptions="Center" />
+                    <Picker x:Name="privateKeySpinner" 
+                    HorizontalOptions="FillAndExpand"
+                    ItemsSource="{Binding PrivateKeys}"
+                    SelectedItem="{Binding SelectedPrivateKey, Mode=TwoWay}"
+                    Title="Pick a Private Key" />
+                <Label Text="{Binding DisplaySelectedPrivateKey}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End" />
+            </HorizontalStackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+            <!-- Row 17: Command Topic -->
+            <HorizontalStackLayout x:Name="CommandTopicLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                      Binding="{Binding SelectedType}"
+                      Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                      <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>  
+                </HorizontalStackLayout.Triggers>
+                <Label Text="Command Topic" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="et_cmdTopic"  Text="{Binding CommandTopic, Mode=TwoWay}" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter command topic"/>
+            </HorizontalStackLayout>
+         
+
+            <!-- Row 18: Response Topic -->
+            <HorizontalStackLayout x:Name="ResponseTopicLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                      Binding="{Binding SelectedType}"
+                      Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </HorizontalStackLayout.Triggers>
+                <Label Text="Response Topic" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="et_responseTopic"  Text="{Binding ResponseTopic, Mode=TwoWay}" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter response topic"/>
+            </HorizontalStackLayout>
+          
+
+            <!-- Row 19: Event Topic -->
+            <HorizontalStackLayout x:Name="EventTopicLayout" IsVisible="False">
+                <HorizontalStackLayout.Triggers>
+                    <DataTrigger TargetType="HorizontalStackLayout"
+                        Binding="{Binding SelectedType}"
+                        Value="{x:Static api3:ENUM_EP_TYPE.Mdm}">
+                        <Setter Property="IsVisible" Value="True" />
+                    </DataTrigger>
+                </HorizontalStackLayout.Triggers>
+                <Label Text="Event Topic" 
+                    FontAttributes="Bold" 
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <Entry x:Name="et_eventTopic"   Text="{Binding EventTopic, Mode=TwoWay}" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Enter event topic"/>
+            </HorizontalStackLayout>
+           
+            
+            <Button Text="Save" 
+                 Clicked="OnSaveClicked" 
+                 CommandParameter="{Binding}" HorizontalOptions="FillAndExpand" />
+        </VerticalStackLayout>
+       
+    </ScrollView>
+   
+</ContentPage>
+    

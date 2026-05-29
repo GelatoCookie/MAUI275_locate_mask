@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.WifiStatus"
+             Title="Wi-Fi Status">
+
+        <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="15">
+        <!-- Wi-Fi Status Section -->
+        <Frame Grid.Row="0" BorderColor="#DDDDDD" CornerRadius="10" Padding="15" Margin="0,0,0,15">
+            <Grid>
+                <Label Text="Wi-Fi Status" FontSize="16" FontAttributes="Bold" />
+            </Grid>
+        </Frame>
+
+        <!-- Channel Band Selection Section -->
+        <Frame Grid.Row="1" BorderColor="#DDDDDD" CornerRadius="10" Padding="15" Margin="0,0,0,15">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Select Channel band list" FontSize="16" FontAttributes="Bold" />
+                <Grid ColumnDefinitions="Auto,*,Auto,*,Auto,*" Padding="0">
+                    <CheckBox x:Name="CheckBox24GHz" IsChecked="{Binding Is24GHzChecked}" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="2.4GHz" Grid.Column="1" VerticalOptions="Center"/>
+                    <CheckBox x:Name="CheckBox5GHzNonDFS" IsChecked="{Binding Is5GHzNonDFSChecked}" Grid.Column="2" VerticalOptions="Center"/>
+                    <Label Text="5GHz Non DFS" Grid.Column="3" VerticalOptions="Center"/>
+                    <CheckBox x:Name="CheckBox5GHzDFS" IsChecked="{Binding Is5GHzDFSChecked}" Grid.Column="4" VerticalOptions="Center"/>
+                    <Label Text="5GHz DFS" Grid.Column="5" VerticalOptions="Center"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Wi-Fi Details Section -->
+        <Frame Grid.Row="2" BorderColor="#DDDDDD" CornerRadius="10" Padding="15">
+            <Grid RowDefinitions="Auto,*">
+                <Label Text="Wi-Fi Details" FontSize="16" FontAttributes="Bold" Grid.Row="0" />
+                <CollectionView Grid.Row="1"
+                                ItemsSource="{Binding WifiStatus}"
+                                Margin="0,10,0,0"
+                                EmptyView="No Wi-Fi status available.">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="#EEEEEE" Margin="0,5" Padding="10">
+                                <Label Text="{Binding}" FontSize="16" TextColor="#333333" />
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Frame>
+
+        <!-- Save Button at the bottom -->
+        <Button Grid.Row="3"
+                Text="Save"
+                Command="{Binding SaveChannelBandCommand}"
+                FontAttributes="Bold"
+                FontSize="18"
+                BackgroundColor="#3366CC"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,20,0,0"
+                HorizontalOptions="Fill" />
+    </Grid>
+</ContentPage>

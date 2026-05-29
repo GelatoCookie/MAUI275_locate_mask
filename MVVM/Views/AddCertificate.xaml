@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.AddCertificate"
+             xmlns:vm="clr-namespace:MauiRfidSample.MVVM.ViewModels"
+             Title="AddCertificate">
+    <ContentPage.BindingContext>
+        <vm:AddCertificateViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Padding="20">
+        <!-- EndpointType Picker -->
+        <Picker x:Name="TypePicker" Title="Select Certificate Type"  SelectedItem="{Binding SelectedType}">
+            <Picker.Items>
+                <x:String>wifi</x:String>
+                <x:String>mqtt</x:String>
+                <x:String>others</x:String>
+                <x:String>filestore</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Cert Type Picker -->
+        <Picker x:Name="CertTypePicker" Title="Select Cert Type" SelectedItem="{Binding SelectedCertType}">
+            <Picker.Items>
+                <x:String>ca_cert</x:String>
+                <x:String>client_cert</x:String>
+                <x:String>client_key</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Certificate Name Entry -->
+        <Label x:Name="CertNameEntry" Text="{Binding CertNameEntry}"  />
+
+        <!-- File Selection Button -->
+        <Button Text="Select Certificate File"  Command="{Binding SelectFileCommand}" />
+        <Entry x:Name="OthersCertName"   Text="{Binding OthersCertName, Mode=TwoWay}" 
+               HorizontalOptions="FillAndExpand" 
+               Placeholder="Enter certificate name"
+                 IsVisible="{Binding IsOthersSelected}"/>
+
+        <Label x:Name="FilePathLabel" Text="{Binding FilePath}"/>
+
+        <!-- Upload Button -->
+        <Button Text="Upload Certificate" Command="{Binding UploadCertificateCommand}" />
+    </StackLayout>
+</ContentPage>
+    

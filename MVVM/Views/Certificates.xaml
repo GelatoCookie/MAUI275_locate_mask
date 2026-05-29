@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.Certificates"
+             Title="Certificates">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="20">
+            <!-- First Layout: Add and Remove All -->
+            <Grid ColumnDefinitions="Auto,20,Auto,20,Auto" HorizontalOptions="Fill">
+                <Button Text="Add"
+                        Clicked="OnAddClicked"
+                        Grid.Column="0"
+                        HorizontalOptions="Center"
+                        AutomationProperties.HelpText="Add Certificate" />
+                <Button Text="Remove All"
+                        Clicked="OnRemoveAllClicked"
+                        Grid.Column="2"
+                        HorizontalOptions="Center"
+                        AutomationProperties.HelpText="Remove All Certificates" />
+                <Button Text="Save"
+                        Clicked="OnSaveClicked"
+                        Grid.Column="4"
+                        HorizontalOptions="Center"
+                        AutomationProperties.HelpText="Save All Certificates" />
+            </Grid>
+
+            <!-- Second Layout: List of Certificates -->
+            <CollectionView ItemsSource="{Binding Certificates}" SelectionMode="None"
+                            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*, auto" Padding="5">
+                            <Label Text="{Binding}" FontSize="18" VerticalOptions="Center" Grid.Column="0" />
+                            <Button Text="Remove" 
+                                    Clicked="OnRemoveClicked" 
+                                    CommandParameter="{Binding}" 
+                                    Grid.Column="1"
+                                    AutomationProperties.Name="Remove Certificate" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+	<!--<application android:allowBackup="true" tools:replace="android:label,android:allowBackup" android:supportsRtl="true" android:icon="@mipmap/appicon">
+		<uses-library android:name="com.qti.qrs.qc_sdk" android:required="false" />
+	</application>-->
+
+	<application android:allowBackup="true" tools:replace="android:label,android:allowBackup" android:supportsRtl="true"  android:icon="@mipmap/appicon">
+		<uses-library android:name="com.qti.qrs.qc_sdk" android:required="false" />
+	</application>
+	<!-- All permissions belong here, outside the <application> tag -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- Modern Bluetooth Permissions (for Android 12+) -->
+	<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+	<!-- Legacy Bluetooth Permissions (for Android 11 and below) -->
+	<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+
+	<uses-sdk android:minSdkVersion="29" android:targetSdkVersion="36" />
+</manifest>

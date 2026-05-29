@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+ x:Class="MauiRfidSample.MVVM.Views.SingulationView"
+ xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:vm="clr-namespace:MauiRfidSample.MVVM.ViewModels">
+
+ <ContentPage.Resources>
+  <Style TargetType="Picker">
+   <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+  </Style>
+  <Style TargetType="Entry">
+   <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+  </Style>
+  <Style TargetType="Button">
+   <Setter Property="CornerRadius" Value="6" />
+   <Setter Property="Padding" Value="12,6" />
+  </Style>
+ </ContentPage.Resources>
+
+ <ScrollView Padding="16">
+  <VerticalStackLayout Spacing="18">
+   <!-- Session Picker -->
+   <HorizontalStackLayout Spacing="12">
+    <Label Text="Session" VerticalTextAlignment="Center" WidthRequest="110" />
+    <Picker
+     Title="Select Session"
+     ItemsSource="{Binding SessionOptions}"
+     SelectedItem="{Binding SelectedSession, Mode=TwoWay}" />
+   </HorizontalStackLayout>
+
+   <!-- Tag Population -->
+   <HorizontalStackLayout Spacing="12">
+    <Label Text="Tag Population" VerticalTextAlignment="Center" WidthRequest="110" />
+    <Entry
+     Placeholder="e.g.32"
+     Keyboard="Numeric"
+     Text="{Binding TagPopulation, Mode=TwoWay}" />
+   </HorizontalStackLayout>
+
+   <!-- Inventory State -->
+   <HorizontalStackLayout Spacing="12">
+    <Label Text="Inventory State" VerticalTextAlignment="Center" WidthRequest="110" />
+    <Picker
+     Title="Inventory State"
+     ItemsSource="{Binding InventoryStateOptions}"
+     SelectedItem="{Binding SelectedInventoryState, Mode=TwoWay}" />
+   </HorizontalStackLayout>
+
+   <!-- SL Flag -->
+   <HorizontalStackLayout Spacing="12">
+    <Label Text="SL Flag" VerticalTextAlignment="Center" WidthRequest="110" />
+    <Picker
+     Title="SL Flag"
+     ItemsSource="{Binding SlFlagOptions}"
+     SelectedItem="{Binding SelectedSlFlag, Mode=TwoWay}" />
+   </HorizontalStackLayout>
+
+   <!-- Save Button -->
+   <Button
+    Text="Save"
+    BackgroundColor="Blue"
+    TextColor="White"
+    Command="{Binding SaveCommand}" />
+
+
+
+            <!-- Status / Feedback -->
+   <Label
+    Text="{Binding StatusMessage}"
+    TextColor="Gray"
+    FontSize="12" />
+  </VerticalStackLayout>
+ </ScrollView>
+</ContentPage>

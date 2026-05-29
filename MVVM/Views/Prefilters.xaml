@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.Prefilters"
+             Title="Prefilters">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+                <Label Grid.Row="0" Grid.Column="0" Text="Tag Pattern" VerticalTextAlignment="Center" />
+                <Entry Grid.Row="0" Grid.Column="1" Placeholder="Enter tag pattern" Text="{Binding TagPattern}" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Target" VerticalTextAlignment="Center" />
+                <Picker Grid.Row="1" Grid.Column="1" Title="Select target"
+                        ItemsSource="{Binding Targets}"
+                        SelectedItem="{Binding SelectedTarget}" />
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Action" VerticalTextAlignment="Center" />
+                <Picker Grid.Row="2" Grid.Column="1" Title="Select action"
+                        ItemsSource="{Binding Actions}"
+                        SelectedItem="{Binding SelectedAction}" />
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Memory Bank" VerticalTextAlignment="Center" />
+                <Picker Grid.Row="3" Grid.Column="1" Title="Select memory bank"
+                        ItemsSource="{Binding MemoryBanks}"
+                        SelectedItem="{Binding SelectedMemoryBank}" />
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Pointer" VerticalTextAlignment="Center" />
+                <Entry Grid.Row="4" Grid.Column="1" Placeholder="Enter pointer" Keyboard="Numeric" Text="{Binding Pointer}" />
+
+                <Label Grid.Row="5" Grid.Column="0" Text="Length" VerticalTextAlignment="Center" />
+                <Entry Grid.Row="5" Grid.Column="1" Placeholder="Enter length" Keyboard="Numeric" Text="{Binding Length}" />
+            </Grid>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <Button Text="Save" Grid.Column="0" Command="{Binding SaveCommand}" />
+                <Button Text="Delete All Prefilters" Grid.Column="1" Command="{Binding DeleteAllCommand}" />
+            </Grid>
+
+            <Label Text="{Binding Status}" TextColor="Gray" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

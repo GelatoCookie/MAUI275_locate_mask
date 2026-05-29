@@ -1,0 +1,25 @@
+# Merged by Fused Library.
+ -keep public class com.zebra.rfid.** { *; }
+ -keep public class com.zebra.rfid.api3.** { *; }
+ -keep public class com.zebra.rfid.api3.ENUM_SERVICE_STATUS { *; }
+ -keep public class com.zebra.rfidhost.** { *; }
+ -keep public class com.zebra.rfidhostlib.** { *; }
+ -keep public class com.zebra.rfid.**$* { *; }
+ -keep public class com.zebra.rfidhost.**$* { *; }
+ -keep public class com.zebra.rfidhostlib.**$* { *; }
+ -keep public class com.zebra.rfidserial.** { *; }
+ -keep public class com.zebra.rfidserial.**$* { *; }
+
+ -keep class com.zebra.rfid.api3.RfidUsbMgr { *; }
+ -keep class com.zebra.rfid.api3.InvalidUsageException { *; }
+ -keep class com.zebra.rfid.api3.OperationFailureException { *; }
+ -keep class com.zebra.rfid.api3.API3UsbService { *; }
+ -keep class com.zebra.rfid.api3.TransportAbstract { *; }
+ -keep class com.zebra.rfid.api3.API3TransportWrapper { *; }
+ -keepattributes *Annotation*
+ -keep class * extends java.lang.annotation.Annotation{ *; }
+
+ -keep class com.zebra.rfid.api3.HexDump.** { *; }
+ -keep class com.zebra.rfid.api3.** { *; }
+ -keep interface com.zebra.rfid.** { *; }
+

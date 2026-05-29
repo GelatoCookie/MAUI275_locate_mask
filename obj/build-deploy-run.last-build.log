@@ -1,0 +1,12 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+/usr/local/share/dotnet/packs/Microsoft.Android.Sdk.Darwin/36.1.53/tools/Xamarin.Android.Common.targets(570,3): warning XA1037: The 'AndroidFastDeploymentType' MSBuild property is deprecated and will be removed in .NET 9. See https://aka.ms/net-android-deprecations for more details. [/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MauiRfidSample.csproj::TargetFramework=net10.0-android]
+  MauiRfidSample -> /Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/bin/Debug/net10.0-android/MauiRfidSample.dll
+
+Build succeeded.
+
+/usr/local/share/dotnet/packs/Microsoft.Android.Sdk.Darwin/36.1.53/tools/Xamarin.Android.Common.targets(570,3): warning XA1037: The 'AndroidFastDeploymentType' MSBuild property is deprecated and will be removed in .NET 9. See https://aka.ms/net-android-deprecations for more details. [/Users/chucklin/StudioProjects/68_TC22R_Locate/Android_MAUI_sample_app_SDK_2.0.5.275/Zebra_RFIDAPI3_Android_MAUI_SDK_2.0.5.275/MauiRfidSample/MauiRfidSample.csproj::TargetFramework=net10.0-android]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:36.05

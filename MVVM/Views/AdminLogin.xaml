@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRfidSample.MVVM.Views.AdminLogin"
+             xmlns:viewmodel="clr-namespace:MauiRfidSample.MVVM.ViewModels"
+             Title="Admin Login">
+
+    <ContentPage.BindingContext>
+        <viewmodel:AdminLoginViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Start">
+        <Image Source="padlock.png"
+               HeightRequest="100"
+               HorizontalOptions="Center" />
+        
+        <Label Text="Admin Login"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        
+        <Grid ColumnDefinitions="*, Auto">
+            <!-- Password Entry -->
+            <Entry Grid.Column="0"
+                   Placeholder="Enter Password" 
+                   IsPassword="True"
+                   Text="{Binding Password}" />
+            
+            <!-- Info Button -->
+            <Button Grid.Column="1"
+                    Text="ⓘ"
+                    FontSize="30"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    CornerRadius="20"
+                    BackgroundColor="Transparent"
+                    TextColor="{StaticResource Primary}"
+                    Clicked="ShowPasswordCriteriaCommand"/>
+        </Grid>
+        
+        <Button Text="Login"
+                Command="{Binding LoginCommand}"
+                HorizontalOptions="Fill" />
+                
+        <Button Text="Change Password"
+                Clicked="NavigateToChangePasswordCommand"
+                HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
